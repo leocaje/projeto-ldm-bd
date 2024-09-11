@@ -1,0 +1,123 @@
+<div class="container text-center">
+
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #09105D !important;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" style="color: #FFF;">Sistema de Agendamentos</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/" style="color: #FFF; font-weight: bold">Cadastrar</a>
+                            <a class="nav-link" href="/consulta" style="color: #FFF;">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p class="text-start fs-5" style="padding-left: 10px;">Cadastrar Agendamento</p>
+            <p class="text-start fs-6" style="padding-left: 10px; margin-top: -1em; margin-bottom: 2em;">Insira seus dados para realizar um agendamento</p>
+        </div>
+    </div>
+
+    <form action="/cadastrar" method="post" style="max-width: 1000px; margin: 0 50px;">
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                Nome:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                Endereço:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço">
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                Bairro:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                CEP:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" >
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                Cidade:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                Estado:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="estado" name="estado" placeholder="UF" >
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="row">
+                Telefone:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00)0000-0000">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="row">
+                Celular:
+            </div>
+
+            <div class="row">
+                <input type="text" class="form-control" id="celular" name="celular" placeholder="(00)00000-0000">
+            </div>
+        </div>
+
+        <div class="row" style="margin: 25px 0;">
+            <div class="col" style="display: flex; justify-content: center; gap: 30px">
+                <button type="submit" class="btn btn-primary" style="background-color: #0C19AB;">Cadastrar</button>
+                <!-- <button type="button" class="btn btn-primary" style="background-color: #CF001C;">Cancelar</button> -->
+            </div>
+        </div>
+    </form>
+</div>
